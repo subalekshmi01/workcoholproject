@@ -303,7 +303,7 @@
     display: flex;
     text-align: center;
   } 
-  .body{
+  body{
     overflow-x: hidden;
     overflow-y: hidden;
   }
