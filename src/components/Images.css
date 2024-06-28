@@ -1,0 +1,94 @@
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .center-img {
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.mt-5 {
+  margin-top: 6rem !important;
+}
+
+.background-blue {
+  background: #FAF6EB;
+  padding: 20px;
+}
+
+/* Default styles */
+.container {
+  display: flex;
+  flex-direction: column; /* Display items vertically by default */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text content */
+  margin-top: 150px;
+}
+
+.heading {
+  font-size: 70px;
+  font-family: Poppins;
+  font-weight: bolder;
+  color: darkblue;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Display items vertically by default */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit width for larger screens */
+}
+
+.text-content,
+.image-content {
+  width: 100%; /* Full width by default */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  margin-top: -66px;
+}
+
+/* Gradient text effect for "Talents" */
+.gradient-text {
+  background: linear-gradient(to right, #01F5A4, #2B85FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media query for screens larger than 768px (desktop/tablet) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Display items horizontally */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items at the top */
+    text-align: left; /* Align text content to the left */
+  }
+
+  .content-container {
+    flex-direction: row; /* Arrange content horizontally */
+  }
+
+  .text-content {
+    width: 50%; /* 50% width for text content */
+  }
+
+  .image-content {
+    width: 50%; /* 50% width for image content */
+  }
+}
+
+/* Hide text-content and image-content on mobile view */
+@media (max-width: 767.98px) {
+  .text-content,
+  .image-content {
+    display: none !important;
+  }
+}

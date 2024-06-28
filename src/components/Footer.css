@@ -1,0 +1,312 @@
+/* 
+ .gogleimg{
+  margin-top: -12px;
+  display: grid;
+ }
+.footer-container {
+  background-color: #0E193B;
+  padding: 20px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-info-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-info-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-info-text {
+  text-align: left;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background: white;
+  width: 100rem;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer-list-item:hover {
+  color: #ccc;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-icon {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: #ccc;
+}
+
+.footer-icon-img {
+  width: 201px;
+  height: 59px;
+  margin-top: 21px;
+}
+
+
+.desktop-icon {
+  display: block;
+}
+
+
+.mobile-icon {
+  display: none;
+  margin-inline: auto;
+}
+
+
+@media (max-width: 767.98px) {
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info-item {
+    text-align: center;
+  } 
+  .emailbody{
+    margin-right: 107px;
+  }
+  .websitebody{
+    margin-right: 121px;
+  }
+
+  
+
+  .desktop-icon {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+    margin-right: 22px;
+  } 
+
+   .footer-bottom-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-list-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-left: -27px;
+    display: flex;
+    text-align: center;
+  } 
+  
+}
+ */
+
+ .gogleimg{
+  margin-top: -12px;
+  display: grid;
+ }
+.footer-container {
+  background-color: #0E193B;
+  padding: 20px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-info-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-info-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-info-text {
+  text-align: left;
+}
+
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background: white;
+  width: 100rem;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer-list-item:hover {
+  color: #ccc;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-icon {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  color: #ccc;
+}
+
+.footer-icon-img {
+  width: 201px;
+  height: 59px;
+  margin-top: 21px;
+}
+
+
+.desktop-icon {
+  display: block;
+}
+
+
+.mobile-icon {
+  display: none;
+  margin-inline: auto;
+}
+
+
+@media (max-width: 767.98px) {
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info-item {
+    text-align: center;
+  } 
+  .emailbody{
+    margin-right: 107px;
+  }
+  .websitebody{
+    margin-right: 121px;
+  }
+
+  
+
+  .desktop-icon {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+    margin-right: 22px;
+  } 
+
+   .footer-bottom-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-list-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-left: -27px;
+    display: flex;
+    text-align: center;
+  } 
+  .body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+}
+

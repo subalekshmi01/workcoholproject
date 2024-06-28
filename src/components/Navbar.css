@@ -1,0 +1,72 @@
+/* .navbar {
+  background: #FAF6EB ;
+}
+
+.login-signup-btn {
+  margin-left: 10px;
+  border: 0 px solid rgb(99, 86, 86);
+  border-radius: 5px;
+  bottom: none;
+  border: none;
+}
+
+
+.login-signup-btn:hover,
+.login-signup-btn:focus {
+  background-color: rgb(129, 133, 137);
+  color: black;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    background:  "#FAF6EB"
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+
+  
+
+  .login-signup-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+} 
+ */
+ .navbar {
+  background: #FAF6EB ;
+}
+
+.login-signup-btn {
+  margin-left: 10px;
+  /* border: 0 px solid rgb(99, 86, 86); */
+  border-radius: 5px;
+  bottom: none;
+  border: none;
+}
+
+
+.login-signup-btn:hover,
+.login-signup-btn:focus {
+  /* background-color: rgb(129, 133, 137); */
+  color: black;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    background:  "#FAF6EB"
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+
+  
+
+  .login-signup-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+} 
+

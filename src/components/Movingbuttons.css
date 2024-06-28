@@ -1,0 +1,64 @@
+
+ .moving-buttons-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 123px;
+}
+
+.moving-buttons {
+  display: inline-block;
+  animation: moveButtons 25s linear infinite;
+  width: 100rem;
+}
+
+
+
+
+.btn-custom {
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0 8px; /* Add margin to ensure spacing between buttons */
+}
+
+.btn-custom:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveButtons {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .moving-buttons-container {
+    margin-bottom: 30px;
+  }
+
+  .btn-custom {
+    padding: 4px 8px; /* Reduced padding for mobile view */
+    font-size: 14px; 
+  }
+
+  .moving-buttons-container.mt-2 {
+    margin-top: 10px; /* Reduce margin between the rows */
+  }
+  .moving-buttons {
+    /* display: inline-block; */
+    animation: moveButtons 20s linear infinite;
+    width: 100rem;
+  }
+}
