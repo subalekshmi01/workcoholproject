@@ -1,76 +1,16 @@
-// import React, { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Navbar, Nav, Button } from 'react-bootstrap';
-// import { FaBars } from 'react-icons/fa';
-// import './Navbar.css';
-// import mobiletitle from '../images/mobiletitleimg.png'
-// import mobilehandburg from '../images/mobilehandburgimg.png'
-// import webtitle from '../images/webtitleimg.png';
-
-// const NavBar = () => {
-//   const [expanded, setExpanded] = useState(false);
-
-//   return (
-//     <Navbar bg="rose" expand="lg" expanded={expanded}>
-//       <Navbar.Brand href="/">
-//         <img
-//           src={webtitle}
-//           alt="Title Image"
-//           className="d-none d-lg-block"
-//         />
-//         <img
-//           src={mobiletitle}
-//           alt="Title Image Mobile"
-//           className="d-lg-none "
-//         />
-//       </Navbar.Brand>
-//       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
-//         {/* <FaBars /> */}
-//         <img src={mobilehandburg}/>
-//       </Navbar.Toggle>
-//       <Navbar.Collapse id="basic-navbar-nav " style={{color:" #556987"}}>
-//         <Nav className="mx-auto">
-//           <Nav.Link href="" className='text-primary'>Programs</Nav.Link>
-//           <Nav.Link href="" className='text-primary'>About Us</Nav.Link>
-//           <Nav.Link href="" className='text-primary'>Careers</Nav.Link>
-//           <Nav.Link href="" className='text-primary'>Resources</Nav.Link>
-//         </Nav>
-//         <Nav>
-//           {/* <Button  className="login-signup-btn">Login</Button>
-//           <Button  className="login-signup-btn">Sign Up</Button> */}
-//           <button  className="login-signup-btn fs-5 " style={{fontWeight:"500"}}>Login</button>
-//           <button  className="login-signup-btn fs-5" style={{fontWeight:"500"}}>Sign Up</button>
-//         </Nav>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   );
-// };
-
-// export default NavBar;
-
-
-
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import { FaBars } from 'react-icons/fa';
-import './Navbar.css';
-import mobiletitle from '../images/mobiletitleimg.png'
-import mobilehandburg from '../images/mobilehandburgimg.png'
+import mobiletitle from '../images/mobiletitleimg.png';
+import mobilehandburg from '../images/mobilehandburgimg.png';
 import webtitle from '../images/webtitleimg.png';
+import './Navbar.css'; 
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Navbar bg="rose" expand="lg" expanded={expanded}>
+    <Navbar  expand="lg" expanded={expanded} className="custom-navbar">
       <Navbar.Brand href="/">
         <img
           src={webtitle}
@@ -80,25 +20,25 @@ const NavBar = () => {
         <img
           src={mobiletitle}
           alt="Title Image Mobile"
-          className="d-lg-none "
+          className="d-lg-none"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")}>
-        {/* <FaBars /> */}
-        <img src={mobilehandburg}/>
+        <img src={mobilehandburg} alt="Toggle" />
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav " style={{color:" #556987"}}>
-        <Nav className="mx-auto">
-          <Nav.Link href="" className='text-primary'>Programs</Nav.Link>
-          <Nav.Link href="" className='text-primary'>About Us</Nav.Link>
-          <Nav.Link href="" className='text-primary'>Careers</Nav.Link>
-          <Nav.Link href="" className='text-primary'>Resources</Nav.Link>
+      <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
+        <Nav className="mx-auto custom-nav">
+          <Nav.Link href="#" className="custom-nav-link">Programs</Nav.Link>
+          <Nav.Link href="#" className="custom-nav-link">About Us</Nav.Link>
+          <Nav.Link href="#" className="custom-nav-link">Careers</Nav.Link>
+          <Nav.Link href="#" className="custom-nav-link">Resources</Nav.Link>
         </Nav>
         <Nav>
-          {/* <Button  className="login-signup-btn">Login</Button>
-          <Button  className="login-signup-btn">Sign Up</Button> */}
-          <button  className="login-signup-btn fs-5 " style={{fontWeight:"500"}}>Login</button>
-          <button  className="login-signup-btn fs-5" style={{fontWeight:"500"}}>Sign Up</button>
+        <div className="mt-4">
+          <Button variant="outline-primary" className="mb-2 ms-2">Login</Button>
+          <Button variant="outline-primary" className="mb-2 ms-2">Sign Up</Button>
+        </div>
+          
         </Nav>
       </Navbar.Collapse>
     </Navbar>
@@ -106,4 +46,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-

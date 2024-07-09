@@ -1,6 +1,6 @@
 
-
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Movingbuttons.css';
 
 const Movingbuttons = () => {
@@ -18,7 +18,7 @@ const Movingbuttons = () => {
   ];
 
   return (
-    <div className="container-fluid " style={{background:" #FAF6EB"}}>
+    <div className="container-fluid" style={{ background: "#FAF6EB" }}>
       {/* Desktop view */}
       <div className="row d-none d-md-flex justify-content-center ml-0">
         <div className="col-12">
@@ -62,3 +62,4 @@ const Movingbuttons = () => {
 };
 
 export default Movingbuttons;
+

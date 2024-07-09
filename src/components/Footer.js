@@ -1,7 +1,5 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import addressIcon from '../images/webadd.png';
 import emailIcon from '../images/webemai.png';
@@ -11,7 +9,7 @@ import mobileEmailIcon from '../images/mobemail.png';
 import mobileWebsiteIcon from '../images/mobad.png';
 import googleplay from '../images/Google Play.svg';
 import appstore from '../images/App Store.svg';
-import Googlemap from './Googlemap';
+import './Footer.css';
 
 const Footer = () => {
   const [isMapOpen, setIsMapOpen] = useState(false);
@@ -21,201 +19,109 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-container">
-      <div className="footer-content">
-        <div className="footer-info">
-          <div className="footer-info-item">
-            <img src={addressIcon} alt="Address Icon" className="footer-info-icon desktop-icon" />
-            <img src={mobileAddressIcon} alt="Mobile Address Icon" className="footer-info-icon mobile-icon" />
-            <div className="footer-info-text">
-              <h4 className="footer-info-title">Address</h4>
-              <address className="footer-info-content" >
-                <Link to=""style={{textDecoration:"none",color: "#8896AB"}} onClick={handleAddressClick}>
-                  WorkGency Tech Private Limited<br />
-                  Tidel Park, Module 115 D, North Block<br />
-                  First Floor, Rajiv Gandhi Salai,<br />
-                  Taramani, Chennai - 6000113
-                </Link>
-              </address>
+    <div className="container-fluid bg-dark text-white py-4">
+      <div className="container">
+        <div className="row align-items-start">
+          {/* Address */}
+          <div className="col-md-4 mb-4 mb-md-0">
+            <div className="d-flex align-items-start">
+              <img src={addressIcon} alt="Address Icon" className="desktop-icon me-2" />
+              <img src={mobileAddressIcon} alt="Mobile Address Icon" className="mobile-icon me-2" />
+              <div>
+                <h5 className="mb-1 text-start">Address</h5>
+                <address className="mb-0 text-start" style={{ color: '#8896AB'}}>
+                  <Link to="#" onClick={handleAddressClick} className="text-decoration-none text-reset">
+                    WorkGency Tech Private Limited<br />
+                    Tidel Park, Module 115 D, North Block<br />
+                    First Floor, Rajiv Gandhi Salai,<br />
+                    Taramani, Chennai - 6000113
+                  </Link>
+                </address>
+              </div>
             </div>
           </div>
-          <div className="footer-info-item emailbody">
-            <img src={emailIcon} alt="Email Icon" className="footer-info-icon desktop-icon" />
-            <img src={mobileEmailIcon} alt="Mobile Email Icon" className="footer-info-icon mobile-icon" />
-            <div className="footer-info-text">
-              <h4 className="footer-info-title">Email</h4>
-              <p className="footer-info-content " > <Link to="/" style={{textDecoration:"none" ,color: "#8896AB"}}>apply@workcohol.com</Link> </p>
+
+          {/* Email */}
+          <div className="col-md-4 mb-4 mb-md-0">
+            <div className="d-flex align-items-start">
+              <img src={emailIcon} alt="Email Icon" className="desktop-icon me-2" />
+              <img src={mobileEmailIcon} alt="Mobile Email Icon" className="mobile-icon me-2" />
+              <div>
+                <h5 className="mb-1 text-start">Email</h5>
+                <p className="mb-0 text-start" style={{ color: '#8896AB'}}>
+                  <Link to="/" className="text-decoration-none text-reset">apply@workcohol.com</Link>
+                </p>
+              </div>
             </div>
           </div>
-          <div className="footer-info-item websitebody">
-            <img src={websiteIcon} alt="Website Icon" className="footer-info-icon desktop-icon" />
-            <img src={mobileWebsiteIcon} alt="Mobile Website Icon" className="footer-info-icon mobile-icon" />
-            <div className="footer-info-text">
-              <h4 className="footer-info-title">Website</h4>
-              <p className="footer-info-content " style={{ color: "#8896AB" }}> <Link to="/" style={{textDecoration:"none", color: "#8896AB" }}>www.workcohol.com</Link> </p>
+
+          {/* Website */}
+          <div className="col-md-4 mb-4 mb-md-0">
+            <div className="d-flex align-items-start">
+              <img src={websiteIcon} alt="Website Icon" className="desktop-icon me-2" />
+              <img src={mobileWebsiteIcon} alt="Mobile Website Icon" className="mobile-icon me-2" />
+              <div>
+                <h5 className="mb-1 text-start">Website</h5>
+                <p className="mb-0 text-start" style={{ color: '#8896AB'}}>
+                  <Link to="/" className="text-decoration-none text-reset" >www.workcohol.com</Link>
+                </p>
+              </div>
             </div>
           </div>
-       
-        <div className="footer-info-right gogleimg">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src={googleplay} alt="Google Play Icon" className="footer-icon-img" />
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <img src={appstore} alt="App Store Icon" className="footer-icon-img" />
-          </a>
+        {/* </div> */}
+
+        {/* Google Play and App Store Buttons */}
+        {/* <div className="row mt-4"> */}
+        <div className="col-md-4 footer-images-right">
+          <div className="d-flex flex-column align-items-end">
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="mb-3">
+              <img src={googleplay} alt="Google Play Icon" className="store-icon" />
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+              <img src={appstore} alt="App Store Icon" className="store-icon" />
+            </a>
+          </div>
+        </div>
+        {/* </div> */}
         </div>
         </div>
-      </div>
+
+        <hr className="my-4 full-width-hr" />
+
+        <div className="row justify-content-between align-items-center">
+          <div className="col-md-6 mb-4 mb-md-0">
+            <ul className="list-unstyled mb-0 d-flex flex-column flex-md-row justify-content-center justify-content-md-start">
+              <li className="me-3 mb-2 mb-md-0" style={{ color: '#8896AB', fontSize: '14px' }}>© 2021 Workcohol. All rights reserved.</li>
+              <li className="me-3 mb-2 mb-md-0">
+                <Link to="/" style={{ textDecoration: 'none', color: '#8896AB', fontSize: '14px' }}>Terms & Conditions</Link>
+              </li>
+              <li>
+                <Link to="/" style={{ textDecoration: 'none', color: '#8896AB', fontSize: '14px' }}>Privacy Policy</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-6">
+            <div className="d-flex justify-content-center justify-content-md-end">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-muted me-3">
+                <FaFacebook style={{ color: '#8896AB', fontSize: '20px', cursor: 'pointer' }} />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted me-3">
+                <FaTwitter style={{ color: '#8896AB', fontSize: '20px', cursor: 'pointer' }} />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-muted me-3">
+                <FaInstagram style={{ color: '#8896AB', fontSize: '20px', cursor: 'pointer' }} />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-muted">
+                <FaLinkedin style={{ color: '#8896AB', fontSize: '20px' }} />
+              </a>
+            </div>
+          </div>
+        </div>
+      
 
       {/* {isMapOpen && <Googlemap />} */}
-
-      <hr className="footer-divider" />
-      <div className="footer-bottom-content">
-        <ul className="footer-list">
-          <li className="footer-list-item" style={{ color: "#8896AB" }}>© 2021 Workcohol. All rights reserved.</li>
-          <li className="footer-list-item" style={{ color: "#8896AB" }}>
-            <Link to="" style={{textDecoration:"none",color: "#8896AB"}}>Terms & Conditions</Link>
-          </li>
-          <li className="footer-list-item" style={{ color: "#8896AB" }}>
-            <Link to="" style={{textDecoration:"none",color: "#8896AB"}}>Privacy Policy</Link>
-          </li>
-        </ul>
-
-        <div className="social-icons">
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-          </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="footer-icon" style={{ color: "#8896AB" }} />
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import './Footer.css';
-// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-// import addressIcon from '../images/webadd.png';
-// import emailIcon from '../images/webemai.png';
-// import websiteIcon from '../images/webad.png';
-// import mobileAddressIcon from '../images/mobad.png';
-// import mobileEmailIcon from '../images/mobemail.png';
-// import mobileWebsiteIcon from '../images/mobad.png';
-// import googleplay from '../images/Google Play.svg';
-// import appstore from '../images/App Store.svg';
-// import Googlemap from './Googlemap';
-
-// const Footer = () => {
-//   const [isMapOpen, setIsMapOpen] = useState(false);
-
-//   const handleAddressClick = () => {
-//     setIsMapOpen(true);
-//   };
-
-//   return (
-//     <div className="footer-container">
-//       <div className="footer-content">
-//         <div className="footer-info">
-//           <div className="footer-info-item">
-//             <img src={addressIcon} alt="Address Icon" className="footer-info-icon desktop-icon" />
-//             <img src={mobileAddressIcon} alt="Mobile Address Icon" className="footer-info-icon mobile-icon" />
-//             <div className="footer-info-text">
-//               <h4 className="footer-info-title">Address</h4>
-//               <address className="footer-info-content" >
-//                 <Link to="/googlemap"style={{textDecoration:"none",color: "#8896AB"}} onClick={handleAddressClick}>
-//                   WorkGency Tech Private Limited<br />
-//                   Tidel Park, Module 115 D, North Block<br />
-//                   First Floor, Rajiv Gandhi Salai,<br />
-//                   Taramani, Chennai - 6000113
-//                 </Link>
-//               </address>
-//             </div>
-//           </div>
-//           <div className="footer-info-item emailbody">
-//             <img src={emailIcon} alt="Email Icon" className="footer-info-icon desktop-icon" />
-//             <img src={mobileEmailIcon} alt="Mobile Email Icon" className="footer-info-icon mobile-icon" />
-//             <div className="footer-info-text">
-//               <h4 className="footer-info-title">Email</h4>
-//               <p className="footer-info-content " > <Link to="/" style={{textDecoration:"none" ,color: "#8896AB"}}>apply@workcohol.com</Link> </p>
-//             </div>
-//           </div>
-//           <div className="footer-info-item websitebody">
-//             <img src={websiteIcon} alt="Website Icon" className="footer-info-icon desktop-icon" />
-//             <img src={mobileWebsiteIcon} alt="Mobile Website Icon" className="footer-info-icon mobile-icon" />
-//             <div className="footer-info-text">
-//               <h4 className="footer-info-title">Website</h4>
-//               <p className="footer-info-content " style={{ color: "#8896AB" }}> <Link to="/" style={{textDecoration:"none", color: "#8896AB" }}>www.workcohol.com</Link> </p>
-//             </div>
-//           </div>
-       
-//         <div className="footer-info-right gogleimg">
-//           <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-//             <img src={googleplay} alt="Google Play Icon" className="footer-icon-img" />
-//           </a>
-//           <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
-//             <img src={appstore} alt="App Store Icon" className="footer-icon-img" />
-//           </a>
-//         </div>
-//         </div>
-//       </div>
-
-//       {/* {isMapOpen && <Googlemap />} */}
-
-//       <hr className="footer-divider" />
-//       <div className="footer-bottom-content">
-//         <ul className="footer-list">
-//           <li className="footer-list-item" style={{ color: "#8896AB" }}>© 2021 Workcohol. All rights reserved.</li>
-//           <li className="footer-list-item" style={{ color: "#8896AB" }}>
-//             <Link to="/terms" style={{textDecoration:"none",color: "#8896AB"}}>Terms & Conditions</Link>
-//           </li>
-//           <li className="footer-list-item" style={{ color: "#8896AB" }}>
-//             <Link to="/privacy" style={{textDecoration:"none",color: "#8896AB"}}>Privacy Policy</Link>
-//           </li>
-//         </ul>
-
-//         <div className="social-icons">
-//           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-//             <FaFacebook className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-//           </a>
-//           <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-//             <FaTwitter className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-//           </a>
-//           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-//             <FaInstagram className="footer-icon" style={{ color: "#8896AB", cursor: "pointer" }} />
-//           </a>
-//           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-//             <FaLinkedin className="footer-icon" style={{ color: "#8896AB" }} />
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Footer;
-
-
-
-
-

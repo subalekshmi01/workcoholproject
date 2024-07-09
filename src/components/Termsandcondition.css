@@ -16,22 +16,22 @@
 }
 
 .termsbody {
-    /* padding: 1.5rem; */
+    
     margin-top: -1rem;
     color: #00000080;
     text-align: left;
 }
 
-/* Adjustments for smaller screens */
+
 @media (max-width: 768px) {
     .termspolicytitle {
         font-size: 2rem;
-        margin-top: 1rem; /* Adjust margin for smaller screens */
+        margin-top: 1rem; 
     }
 
     .termstitle {
         font-size: 1rem;
-        margin-top: 0.5rem; /* Adjust margin for smaller screens */
+        margin-top: 0.5rem; 
     }
 
     .termsbody {
