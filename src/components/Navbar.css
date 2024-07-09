@@ -1,72 +1,88 @@
-/* .navbar {
-  background: #FAF6EB ;
+
+.custom-navbar {
+  background-color: #FAF6EB;
 }
 
-.login-signup-btn {
-  margin-left: 10px;
-  border: 0 px solid rgb(99, 86, 86);
-  border-radius: 5px;
-  bottom: none;
-  border: none;
+.custom-nav-link {
+  position: relative;
+  color: #007bff;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
-
-.login-signup-btn:hover,
-.login-signup-btn:focus {
-  background-color: rgb(129, 133, 137);
-  color: black;
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 991.98px) {
-  .navbar .navbar-collapse {
-    background:  "#FAF6EB"
-  }
-
-  .navbar-nav .nav-link {
-    text-align: center;
-  }
-
-  
-
-  .login-signup-btn {
-    width: 100%;
-    margin: 10px 0;
-  }
-} 
- */
- .navbar {
-  background: #FAF6EB ;
+.custom-nav-link:hover::after,
+.custom-nav-link:focus::after {
+  width: 100%;
+  left: 0;
 }
 
-.login-signup-btn {
-  margin-left: 10px;
-  /* border: 0 px solid rgb(99, 86, 86); */
-  border-radius: 5px;
-  bottom: none;
-  border: none;
+.custom-nav-link:hover,
+.custom-nav-link:focus {
+  color: #0056b3;
+  text-decoration: none;
 }
 
-
-.login-signup-btn:hover,
-.login-signup-btn:focus {
-  /* background-color: rgb(129, 133, 137); */
-  color: black;
+.custom-collapse {
+  background-color: #FAF6EB;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 991.98px) {
-  .navbar .navbar-collapse {
-    background:  "#FAF6EB"
+  .custom-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    transform: translateX(100%);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1050;
   }
 
-  .navbar-nav .nav-link {
-    text-align: center;
+  .navbar-expand-lg .navbar-collapse.show {
+    transform: translateX(0);
   }
 
-  
+  .custom-navbar .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1100; 
+  }
 
-  .login-signup-btn {
-    width: 100%;
+  .custom-navbar .navbar-toggler img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .navbar-collapse .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item {
     margin: 10px 0;
   }
-} 
 
+  .custom-navbar .navbar-collapse {
+    padding: 1rem;
+    background-color: #FAF6EB;
+  }
+}

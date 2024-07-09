@@ -5,12 +5,12 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const Googlemap = () => {
-  const center = [12.9881, 80.2470]; // Coordinates for Rajiv Gandhi Salai, Taramani, Chennai 600113
+  const center = [12.9881, 80.2470]; 
 
   return (
     <MapContainer
       center={center}
-      zoom={15} // Adjust zoom level as needed
+      zoom={15} 
       style={{ height: '400px', width: '100%' }}
     >
       <TileLayer
