@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="container-fluid bg-dark text-white py-4">
+    <div className="container-fluid text-white py-4 footer-container" >
       <div className="container">
         <div className="row align-items-start">
           {/* Address */}
